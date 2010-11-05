@@ -65,11 +65,7 @@ DDActionHeaderView uses Blocks, Quartz 2D, CALayer, CAGradientLayer, CAAnimation
 
 ![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Portrait.png)  
 
-![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/PortraitActionPicker.png)  
-
 ![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Landscape.png)  
-
-![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/LandscapeActionPicker.png)
 
 ## License
 
