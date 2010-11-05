@@ -28,7 +28,7 @@ DDActionHeaderView uses Blocks, Quartz 2D, CALayer, CAGradientLayer, CAAnimation
 
     self.actionHeaderView = [[DDActionHeaderView alloc] initWithFrame:self.view.bounds];
 
-If you want to use it in Interface Builder, just drag a UIView component and change its class type to DDActionHeaderView. Once you have IBOutlet connected with it, <code>-initWithCoder:</code> will take over the initization.
+    If you want to use it in Interface Builder, just drag a UIView component and change its class type to DDActionHeaderView. Once you have IBOutlet connected with it, <code>-initWithCoder:</code> will take over the initization.
 
 3. Then you can set the title label.
 
@@ -36,7 +36,7 @@ If you want to use it in Interface Builder, just drag a UIView component and cha
 	
 4. Or set the action items through <code>items</code> property. Items is a NSArray of UIView subclass instances, and the UIView subclass instance can be UIView, UIButton, UIImageView or UIControl, etc. They will be added into a *(DDActionHeaderView's width - 20) pixels width and 50 pixel height* action picker. 
 
-	// Create action items, have to be UIView subclass, and set frame position by yourself.
+    // Create action items, have to be UIView subclass, and set frame position by yourself.
     UIButton *facebookButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [facebookButton addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     [facebookButton setImage:[UIImage imageNamed:@"facebook"] forState:UIControlStateNormal];
@@ -53,7 +53,7 @@ If you want to use it in Interface Builder, just drag a UIView component and cha
     
     self.actionHeaderView.items = [NSArray arrayWithObjects:facebookButton, twitterButton, nil];	
 
-Once you set the items array, previous items will be removed from action picker if there is any.
+    Once you set the items array, previous items will be removed from action picker if there is any.
 
 5. You can optionally decided if you want to shrink action picker:
 
