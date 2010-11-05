@@ -55,7 +55,7 @@ DDActionHeaderView uses Blocks, Quartz 2D, CALayer, CAGradientLayer, CAAnimation
 
     Once you set the items array, previous items will be removed from action picker if there is any.
 
-5. You can optionally decided if you want to shrink action picker:
+5. You can optionally decide if you want to shrink action picker:
 
         if (self.actionHeaderView.isActionPickerExpanded) {
             [self.actionHeaderView shrinkActionPicker];
