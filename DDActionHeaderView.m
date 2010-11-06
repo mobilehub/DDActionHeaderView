@@ -211,7 +211,7 @@
 }
 
 - (BOOL)isActionPickerExpanded {
-	return self.titleLabel.isHidden;
+	return (self.titleLabel.isHidden && self.actionPickerView.bounds.size.width != 50.0f);
 }
 
 - (void)setItems:(NSArray *)newItems {
