@@ -4,7 +4,7 @@ Header with title and actions, rapid UI component for quick hands.
 ## Features
 DDActionHeaderView is a new UI component combined the concept of UIToolbar and UINavigationBar. The goal of the design is to allow application **to have both title label and action items in one header, and keep simplicity and accessibility at the same time**.
 
-![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Portrait.png)
+![](https://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Portrait.png)
 
 1. Clean and simple user interface.
 2. Slick animation as visual hints.
@@ -63,9 +63,9 @@ DDActionHeaderView uses Blocks, Quartz 2D, CALayer, CAGradientLayer, CAAnimation
 
 ## Screenshots
 
-![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Portrait.png)  
+![](https://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Portrait.png)  
 
-![](http://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Landscape.png)  
+![](https://github.com/digdog/DDActionHeaderView/raw/master/Screenshots/Landscape.png)  
 
 ## License
 
