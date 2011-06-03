@@ -26,7 +26,8 @@ DDActionHeaderView uses Blocks, Quartz 2D, CALayer, CAGradientLayer, CAAnimation
 1. Make sure you link QuartzCore.framework in your target.
 2. Create DDActionHeaderView with <code>-initWithFrame:</code> or <code>-initWithCoder:</code>. If you want to create it programmatically, use <code>-initWithFrame:</code>, the frame height is ignored, and is always fixed to 70 pixels height.
 
-        self.actionHeaderView = [[DDActionHeaderView alloc] initWithFrame:self.view.bounds];
+        self.actionHeaderView = [[[DDActionHeaderView alloc] initWithFrame:self.view.bounds] autorelease]; 
+        // if self.actionHeaderView is a retain property, we need autorelease.
 
     If you want to use it in Interface Builder, just drag a UIView component and change its class type to DDActionHeaderView. Once you have IBOutlet connected with it, <code>-initWithCoder:</code> will take over the initization.
 
