@@ -17,12 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.actionHeaderView = [[DDActionHeaderView alloc] initWithFrame:self.view.bounds];
+    self.actionHeaderView = [[[DDActionHeaderView alloc] initWithFrame:self.view.bounds] autorelease];
 	
-	// Set title
-	self.actionHeaderView.titleLabel.text = @"Tap DDActionHeaderView Action Picker";
+    // Set title
+    self.actionHeaderView.titleLabel.text = @"Tap DDActionHeaderView Action Picker";
 	
-	// Create action items, have to be UIView subclass, and set frame position by yourself.
+    // Create action items, have to be UIView subclass, and set frame position by yourself.
     UIButton *facebookButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [facebookButton addTarget:self action:@selector(itemAction:) forControlEvents:UIControlEventTouchUpInside];
     [facebookButton setImage:[UIImage imageNamed:@"facebook"] forState:UIControlStateNormal];
@@ -44,38 +44,38 @@
     mailButton.imageEdgeInsets = UIEdgeInsetsMake(13.0f, 13.0f, 13.0f, 13.0f);
     mailButton.center = CGPointMake(125.0f, 25.0f);
 	
-	// Set action items, and previous items will be removed from action picker if there is any.
+    // Set action items, and previous items will be removed from action picker if there is any.
     self.actionHeaderView.items = [NSArray arrayWithObjects:facebookButton, twitterButton, mailButton, nil];	
 	
-	[self.view addSubview:self.actionHeaderView];
+    [self.view addSubview:self.actionHeaderView];
 }
 
 - (void)itemAction:(id)sender {
-	// Reset action picker
-	[self.actionHeaderView shrinkActionPicker];
+    // Reset action picker
+    [self.actionHeaderView shrinkActionPicker];
 }
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return YES;
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
+    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
-	// Release any cached data, images, etc that aren't in use.
+    // Release any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
-	self.actionHeaderView = nil;
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+    self.actionHeaderView = nil;
 }
 
 
 - (void)dealloc {
-	[actionHeaderView release];
+    [actionHeaderView release];
 	
     [super dealloc];
 }
